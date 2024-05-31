@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/ico/me.ico" />
+	<title>Luana Thomas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/typography.css">
+	<link rel="stylesheet" href="../css/utilities.css">
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body>
+	<style>
+		.button-container {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.button {
+			margin-left: 5px;
+		}
+		.tag {
+            display: inline-block;
+            background-color: #717171;
+            color: #ffffff;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #2a2a2a;
+        }
+	</style>
+
+	<div class="navbar">
+		<a class="nav-title-link" href="../index.html">
+			<span class="nav-title">Luana Thomas</span>
+			<div class="button-container">
+				<a class="button" onclick="switchLanguage('en')">
+					<span class="button-text">English</span>
+				</a>
+				<a class="button" onclick="switchLanguage('pt')">
+					<span class="button-text">Português</span>
+				</a>
+			</div>
+		</a>
+	</div>
+
+	<div id="main-content">
+		<div id="project-header">
+			<div class="main-title">On-Key</div>
+		</div>
+
+		<div id="project-details">
+			<div class="project-details-content">
+				<div id="onkey" class="body-text">		
+					On-Key goes beyond just being a virtual piano app - it's a truly inclusive musical universe! With a unique approach, it provides a welcoming environment for all aspiring musicians. The colors have been carefully chosen to ensure visual comfort, while the clear and readable interface is accessible to a wide range of users. Explore interactive lessons, hone your skills, and immerse yourself in a vast musical repertoire. Whether you're a curious newbie or a seasoned enthusiast, On-Key adapts to your rhythm, offering support and encouragement with every note. On-Key also stands out for its accessibility options, including dyslexic font and friendly colors, ensuring that all users can enjoy the music experience in a comfortable and inclusive way. This application was developed in a group over two months. Download now and discover a new world of musical possibilities!
+				</div>
+
+				<div class="body-text">
+					<p>AppStore: <a href="https://apple.co/3Nf9y90">https://apple.co/3Nf9y90</a></p>
+				</div>
+
+				<div class="tags">
+					<span class="tag">Swift</span>
+					<span class="tag">SwiftUI</span>
+					<span class="tag">Scrum</span>
+					<span class="tag">AudioKit</span>
+					<span class="tag">Combine</span>
+					<span class="tag">MVVM</span>			
+				</div>
+			</div>
+		</div>
+
+		<div id="project-gallery">
+			<div class="subheader-text">Previews</div>
+			<div class="project-gallery-content">
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/onkey/img/OnKey 1.png" class="gallery-image">
+					<span id="caption1" class="image-caption">Choice of instruments</span>
+				</div>
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/onkey/img/OnKey 2.png" class="gallery-image">
+					<span id="caption2" class="image-caption">Free practice mode</span>
+				</div>
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/onkey/img/OnKey 3.png" class="gallery-image">
+					<span id="caption3" class="image-caption">Music selection with preview</span>
+				</div>
+
+				<div class="gallery-image-container half-width">
+					<img src="../img/gallery/onkey/img/OnKey 4.png" class="gallery-image">
+					<span id="caption4" class="image-caption">Playing a song on the virtual piano</span>
+				</div>
+				<div class="gallery-image-container half-width">
+					<img src="../img/gallery/onkey/img/OnKey 5.png" class="gallery-image">
+					<span id="caption5" class="image-caption">Sheet music to play on the physical piano</span>
+				</div>
+
+				<div class="gallery-image-container third-width">
+					<video controls>
+						<source src="../img/gallery/onkey/vid/OnKey 1.mov" type="video/mp4">
+						Your browser does not support the video element.
+					</video>
+					<span id="caption6" class="image-caption">Home interface and accessibility options</span>
+				</div>
+				<div class="gallery-image-container third-width">
+					<video controls>
+						<source src="../img/gallery/onkey/vid/OnKey 2.mov" type="video/mp4">
+						Your browser does not support the video element.
+					</video>
+					<span id="caption7" class="image-caption">Playing a song on the virtual piano</span>
+				</div>
+				<div class="gallery-image-container third-width">
+					<video controls>
+						<source src="../img/gallery/onkey/vid/OnKey 3.mov" type="video/mp4">
+						Your browser does not support the video element.
+					</video>
+					<span id="caption8" class="image-caption">Sheet music to play on the physical piano</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<a class="icon-link" target="_blank" href="https://www.instagram.com/luanatthomas/">
+			<image src="../img/icons/instagram.svg" class="footer-icon" />
+		</a>
+		<a class="icon-link" target="_blank" href="https://github.com/luanatthomas">
+			<image src="../img/icons/github.svg" class="footer-icon" />
+		</a>
+		<a class="icon-link" href="mailto:luana.thomas@hotmail.com">
+			<image src="../img/icons/mail.svg" class="footer-icon" />
+		</a>
+	</div>
+
+	<script>
+		function switchLanguage(lang) {
+			const content = {
+				'en': {
+					'onkey': "On-Key goes beyond just being a virtual piano app - it's a truly inclusive musical universe! With a unique approach, it provides a welcoming environment for all aspiring musicians. The colors have been carefully chosen to ensure visual comfort, while the clear and readable interface is accessible to a wide range of users. Explore interactive lessons, hone your skills, and immerse yourself in a vast musical repertoire. Whether you're a curious newbie or a seasoned enthusiast, On-Key adapts to your rhythm, offering support and encouragement with every note. On-Key also stands out for its accessibility options, including dyslexic font and friendly colors, ensuring that all users can enjoy the music experience in a comfortable and inclusive way. This application was developed in a group over two months. Download now and discover a new world of musical possibilities!",
+					'caption1': "Choice of instruments",
+					'caption2': "Free practice mode",
+					'caption3': "Music selection with preview",
+					'caption4': "Playing a song on the virtual piano",
+					'caption5': "Sheet music to play on the physical piano",
+					'caption6': "Home interface and accessibility options",
+					'caption7': "Playing a song on the virtual piano",
+					'caption8': "Sheet music to play on the physical piano",
+				},
+				'pt': {
+					'onkey': "O On-Key vai além de ser apenas um aplicativo de piano virtual - ele é um verdadeiro universo musical inclusivo! Com uma abordagem única, proporciona um ambiente acolhedor para todos os aspirantes a músicos. As cores foram escolhidas cuidadosamente para garantir conforto visual, enquanto a interface clara e legível é acessível a uma ampla gama de usuários. Explore lições interativas, aprimore suas habilidades e mergulhe em um vasto repertório musical. Seja você um novato curioso ou um entusiasta experiente, o On-Key se adapta ao seu ritmo, oferecendo suporte e encorajamento em cada nota. O On-Key também se destaca por suas opções de acessibilidade, incluindo fonte disléxica e cores amigáveis, garantindo que todos os usuários possam desfrutar da experiência musical de forma confortável e inclusiva. Este aplicativo foi desenvolvido em grupo, durante dois mese. Baixe agora mesmo e descubra um novo mundo de possibilidades musicais!",
+					'caption1': "Escolha de intrumentos",
+					'caption2': "Modo de prática livre",
+					'caption3': "Seleção de música com preview",
+					'caption4': "Tocando uma música no piano virtual",
+					'caption5': "Partitura para tocar no piano físico",
+					'caption6': "Interface inicial e opções de acessibilidade",
+					'caption7': "Tocando uma música no piano virtual",
+					'caption8': "Partitura para tocar no piano fisico",
+				}
+			};
+			document.getElementById('onkey').innerText = content[lang]['onkey'];
+			document.getElementById('caption1').innerText = content[lang]['caption1'];
+			document.getElementById('caption2').innerText = content[lang]['caption2'];
+			document.getElementById('caption3').innerText = content[lang]['caption3'];
+			document.getElementById('caption4').innerText = content[lang]['caption4'];
+			document.getElementById('caption5').innerText = content[lang]['caption5'];
+			document.getElementById('caption6').innerText = content[lang]['caption6'];
+			document.getElementById('caption7').innerText = content[lang]['caption7'];
+			document.getElementById('caption8').innerText = content[lang]['caption8'];
+
+			localStorage.setItem('language', lang);
+		}
+		const storedLanguage = localStorage.getItem('language');
+		if (storedLanguage) {
+			switchLanguage(storedLanguage);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/ico/me.ico" />
+	<title>Luana Thomas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/typography.css">
+	<link rel="stylesheet" href="css/utilities.css">
+	<script defer src="js/script.js"></script>
+</head>
+
+<body>
+	<style>
+		.button-container {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.button-container-right {
+			display: flex;
+			justify-content: flex-start;
+		}
+		.button {
+			margin-left: 5px;
+		}
+	</style>
+
+	<div class="navbar">
+		<a class="nav-title-link" href="index.html">
+			<span class="nav-title">Luana Thomas</span>
+			<div class="button-container">
+				<a class="button" onclick="switchLanguage('en')">
+					<span class="button-text">English</span>
+				</a>
+				<a class="button" onclick="switchLanguage('pt')">
+					<span class="button-text">Português</span>
+				</a>
+			</div>
+		</a>
+	</div>
+
+	<div id="main-content">
+		<div id="portfolio-header">
+			<div id="portfolio-header-image-container">
+				<img src="img/me/me.png" class="portfolio-header-image">
+			</div>
+
+			<div id="portfolio-header-text-container">
+				<div class="header-text">
+					<span id="apresentacao" class="main-title">Hey, I'm @luanatthomas,</span>
+					<div id="descricao" class="body-text">iOS developer and Computer Science student at PUCRS.</div>
+				</div>
+				<div class="button-container-right">
+					<a class="button" id="my-work-link">
+						<span id="botao-projetos" class="button-text">Check out my projects</span>
+						<image src="img/icons/arrow-right.svg" class="right-arrow-icon" />
+					</a>
+					<a href="docs/Currículo - Inglês.pdf" id="curriculum-link" target="_blank" class="button">
+						<span id="curriculo-download" class="button-text">Resume download</span>
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="about-section">
+			<span id="sobre" class="subheader-text">About me</span>
+			<div class="about-section-content">
+				<div id="sobre1" class="body-text">Currently, I study Computer Science at PUCRS and work as an iOS
+					developer at
+					the Apple Developer Academy, with experience in SwiftUI and UIKit, as well as other Apple frameworks
+					such as CoreMotion, CoreML, SpriteKit, and AudioKit. My interest in academic research in the area of
+					data privacy led to the presentation of a paper at the 37th Annual IFIP WG 11.3 Conference on Data
+					and
+					Applications Security and Privacy (DBSec'23) in Sophia Antipolis, France.</div>
+
+				<div id="sobre2" class="body-text">As an iOS developer, my goal is to leverage my experience and
+					knowledge in software
+					development to create applications that deliver a high-level user experience. I am seeking
+					challenging
+					opportunities to collaborate on innovative projects, exploring new technologies while contributing
+					to
+					team and company growth. I am committed to continuously enhancing my technical and design skills,
+					aiming
+					to become a highly skilled professional in the iOS app development industry.</div>
+			</div>
+		</div>
+
+		<div id="my-work-section">
+			<span id="projetos" class="subheader-text">My projects</span>
+			<br>
+			<div class="projects-container">
+				<div class="project-card">
+					<img src="img/cover/senses.png" class="project-image">
+					<div class="project-card-text-container">
+						<div class="subheader-text project-title">Senses</div>
+						<div id="senses" class="body-text project-card-text">Developed in one month, Senses is a card
+							game that explores players' emotions, fostering debates and reflections.</div>
+					</div>
+					<a class="button" href="project-pages/senses.html">
+						<span id="ver-mais1" class="button-text">Read more</span>
+						<image src="img/icons/arrow-right.svg" class="right-arrow-icon" />
+					</a>
+				</div>
+
+				<div class="project-card">
+					<img src="img/cover/onkey.png" class="project-image">
+					<div class="project-card-text-container">
+						<div class="subheader-text project-title">OnKey</div>
+						<div id="onkey" class="body-text project-card-text">
+							OnKey is an accessible virtual piano developed in 2 months where you can learn to 
+							play various classical songs on the virtual piano, or use the sheet music to play o
+							n your physical piano.
+						</div>
+					</div>
+					<a class="button" href="project-pages/onkey.html">
+						<span id="ver-mais2" class="button-text">Read more</span>
+						<image src="img/icons/arrow-right.svg" class="right-arrow-icon" />
+					</a>
+				</div>
+
+				<div class="project-card">
+					<img src="img/cover/cabide.png" class="project-image">
+					<div class="project-card-text-container">
+						<div class="subheader-text project-title">Cabide</div>
+						<div id="cabide" class="body-text project-card-text">Cabide is a virtual wardrobe where users
+							can create outfits with their own clothes from anywhere. Developed in 2 months.</div>
+					</div>
+					<a class="button" href="project-pages/cabide.html">
+						<span id="ver-mais3" class="button-text">Read more</span>
+						<image src="img/icons/arrow-right.svg" class="right-arrow-icon" />
+					</a>
+				</div>
+
+				<div class="project-card">
+					<img src="img/cover/byteverse.png" class="project-image">
+					<div class="project-card-text-container">
+						<div class="subheader-text project-title">ByteVerse</div>
+						<div id="byteverse" class="body-text project-card-text">A game inspired by Space Invaders,
+							developed in just one week, using the SpriteKit framework.</div>
+					</div>
+					<a class="button" href="project-pages/byteverse.html">
+						<span id="ver-mais4" class="button-text">Read more</span>
+						<image src="img/icons/arrow-right.svg" class="right-arrow-icon" />
+					</a>
+				</div>
+
+				<div class="project-card">
+					<img src="img/cover/flipty.png" class="project-image">
+					<div class="project-card-text-container">
+						<div class="subheader-text project-title">Flipty</div>
+						<div id="flipty" class="body-text project-card-text">Developed in two weeks, Flipty is an app
+							that brings classic decision-making to your fingertips, on iPhone or Apple Watch.</div>
+					</div>
+					<a class="button" href="project-pages/flipty.html">
+						<span id="ver-mais5" class="button-text">Read more</span>
+						<image src="img/icons/arrow-right.svg" class="right-arrow-icon" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<a class="icon-link" target="_blank" href="https://www.instagram.com/luanatthomas/">
+			<image src="img/icons/instagram.svg" class="footer-icon" />
+		</a>
+		<a class="icon-link" target="_blank" href="https://github.com/luanatthomas">
+			<image src="img/icons/github.svg" class="footer-icon" />
+		</a>
+		<a class="icon-link" href="mailto:luana.thomas@hotmail.com">
+			<image src="img/icons/mail.svg" class="footer-icon" />
+		</a>
+	</div>
+
+	<script>
+		function switchLanguage(lang) {
+			updateCurriculumLink(lang);
+			localStorage.setItem('language', lang);
+
+			const content = {
+				'en': {
+					'apresentacao': "Hey, I'm @luanatthomas,",
+					'descricao': "iOS developer and Computer Science student at PUCRS.",
+					'botao-projetos': "Check out my projects",
+					'curriculo-download': "Resume download",
+					'sobre': "About me",
+					'sobre1': "Currently, I study Computer Science at PUCRS and work as an iOS developer at the Apple Developer Academy, with experience in SwiftUI and UIKit, as well as other Apple frameworks such as CoreMotion, CoreML, SpriteKit, and AudioKit. My interest in academic research in the area of data privacy led to the presentation of a paper at the 37th Annual IFIP WG 11.3 Conference on Data and Applications Security and Privacy (DBSec'23) in Sophia Antipolis, France.",
+					'sobre2': "As an iOS developer, my goal is to leverage my experience and knowledge in software development to create applications that deliver a high-level user experience. I am seeking challenging opportunities to collaborate on innovative projects, exploring new technologies while contributing to team and company growth. I am committed to continuously enhancing my technical and design skills, aiming to become a highly skilled professional in the iOS app development industry.",
+					'projetos': "My projects",
+					'ver-mais1': "Read more",
+					'ver-mais2': "Read more",
+					'ver-mais3': "Read more",
+					'ver-mais4': "Read more",
+					'ver-mais5': "Read more",
+					'senses': "Developed in one month, Senses is a card game that explores players' emotions, fostering debates and reflections.",
+					'onkey': "OnKey is an accessible virtual piano where you can learn to play various classical songs, or use the sheet music to play on your physical piano.",
+					'cabide': "Cabide is a virtual wardrobe where users can create outfits with their own clothes from anywhere. Developed in 2 months.",
+					'byteverse': "A game inspired by Space Invaders, developed in just one week, using the SpriteKit framework.",
+					'flipty': "Developed in two weeks, Flipty is an app that brings classic decision-making to your fingertips, on iPhone or Apple Watch.",
+				},
+				'pt': {
+					'apresentacao': "Olá, eu sou @luanatthomas,",
+					'descricao': 'desenvolvedora iOS e estudante de Ciência da Computação na PUCRS.',
+					'botao-projetos': "Veja meus projetos",
+					'curriculo-download': "Download do currículo",
+					'sobre': 'Sobre mim',
+					'sobre1': "Atualmente, estudo Ciência da Computação na PUCRS e trabalho como desenvolvedora iOS na Apple Developer Academy, com experiência em SwiftUI e UIKit, além de outros frameworks da Apple, como CoreMotion, CoreML, SpriteKit e AudioKit. Meu interesse em pesquisa acadêmica na área de privacidade de dados resultou na publicação e apresentação de um artigo na 37ª Conferência Anual do IFIP WG 11.3 sobre Segurança e Privacidade de Dados e Aplicações (DBSec'23) em Sophia Antipolis, França.",
+					'sobre2': "Como desenvolvedora iOS, meu objetivo é aplicar minha experiência e conhecimento em desenvolvimento de software para criar aplicativos que ofereçam uma experiência de usuário de alto nível. Estou em busca de oportunidades desafiadoras para colaborar em projetos inovadores, explorando novas tecnologias, enquanto contribuo para o crescimento da equipe e da empresa. Estou comprometida em aprimorar constantemente minhas habilidades técnicas e de design, para me tornar uma profissional altamente qualificada na indústria de desenvolvimento de aplicativos iOS.",
+					'projetos': "Meus projetos",
+					'ver-mais1': "Veja mais",
+					'ver-mais2': "Veja mais",
+					'ver-mais3': "Veja mais",
+					'ver-mais4': "Veja mais",
+					'ver-mais5': "Veja mais",
+					'senses': "Desenvolvido em um mês, o Senses é um jogo de cartas que explora as emoções dos jogadores, gerando debates e reflexões.",
+					'onkey': "OnKey é um piano virtual acessível onde você pode aprender a tocar diversas músicas clássicas ou usar partituras para tocar em seu piano físico.",
+					'cabide': "Cabide é um guarda-roupa virtual, onde o usuário pode montar looks com suas próprias roupas estando em qualquer lugar.",
+					'byteverse': "Jogo inspirado em Space Invaders, desenvolvido em apenas uma semana, utilizando o framework SpriteKit.",
+					'flipty': "Desenvolvido em duas semanas, o Flipty é um aplicativo que traz a tomada de decisões clássica ao seu alcance, no iPhone ou Apple Watch.",
+				}
+			};
+
+			document.getElementById('apresentacao').innerText = content[lang]['apresentacao'];
+			document.getElementById('descricao').innerText = content[lang]['descricao'];
+			document.getElementById('botao-projetos').innerText = content[lang]['botao-projetos'];
+			document.getElementById('curriculo-download').innerText = content[lang]['curriculo-download'];
+			document.getElementById('sobre').innerText = content[lang]['sobre'];
+			document.getElementById('sobre1').innerText = content[lang]['sobre1'];
+			document.getElementById('sobre2').innerText = content[lang]['sobre2'];
+			document.getElementById('projetos').innerText = content[lang]['projetos'];
+			document.getElementById('ver-mais1').innerText = content[lang]['ver-mais1'];
+			document.getElementById('ver-mais2').innerText = content[lang]['ver-mais2'];
+			document.getElementById('ver-mais3').innerText = content[lang]['ver-mais3'];
+			document.getElementById('ver-mais4').innerText = content[lang]['ver-mais4'];
+			document.getElementById('ver-mais5').innerText = content[lang]['ver-mais5'];
+			document.getElementById('senses').innerText = content[lang]['senses'];
+			document.getElementById('onkey').innerText = content[lang]['onkey'];
+			document.getElementById('cabide').innerText = content[lang]['cabide'];
+			document.getElementById('byteverse').innerText = content[lang]['byteverse'];
+			document.getElementById('flipty').innerText = content[lang]['flipty'];
+
+			localStorage.setItem('language', lang);
+		}
+
+		const storedLanguage = localStorage.getItem('language');
+		if (storedLanguage) {
+			switchLanguage(storedLanguage);
+		}
+
+		// const language = localStorage.getItem('language');
+
+		function updateCurriculumLink(language) {
+			const englishCurriculumLink = 'docs/Currículo - Inglês.pdf';
+			const portugueseCurriculumLink = 'docs/Curriculo - Português.pdf';
+
+			const curriculumLink = document.getElementById('curriculum-link');
+			const curriculumDownloadText = document.getElementById('curriculo-download');
+
+			if (language === 'en') {
+				curriculumLink.href = englishCurriculumLink;
+				curriculumDownloadText.textContent = 'Resume download';
+			} else {
+				curriculumLink.href = portugueseCurriculumLink;
+				curriculumDownloadText.textContent = 'Download do currículo';
+			}
+		}
+	</script>
+</body>
+
+</html>

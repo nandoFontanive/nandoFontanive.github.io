@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/ico/me.ico" />
+	<title>Luana Thomas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/typography.css">
+	<link rel="stylesheet" href="../css/utilities.css">
+	<script defer src="../js/script.js"></script>
+</head>
+
+
+<body>
+	<style>
+		.button-container {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		.button {
+			margin-left: 5px;
+		}
+	</style>
+
+	<div class="navbar">
+		<a class="nav-title-link" href="./index.html">
+			<span class="nav-title">Luana Thomas</span>
+			<div class="button-container">
+				<a class="button" onclick="switchLanguage('en')">
+					<span class="button-text">English</span>
+				</a>
+				<a class="button" onclick="switchLanguage('pt')">
+					<span class="button-text">Português</span>
+				</a>
+			</div>
+		</a>
+	</div>
+
+	<div id="main-content">
+		<div id="project-header">
+			<div class="main-title">Project Name</div>
+			<div class="body-text">A small description about the project goes here, get the reader hooked on the project
+				and tell them why they should continue to read this page. Give it a sweet tagline.</div>
+			<image class="project-header-image" src="../assets/images/desktop.jpeg">
+		</div>
+
+		<div id="project-details">
+			<div class="subheader-text">Project Details / Background</div>
+			<div class="project-details-content">
+				<div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper
+					risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi
+					blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum
+					tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo.
+					Vitae congue mauris rhoncus aenean vel elit.</div>
+				<div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit
+					eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor
+					dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at
+					augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis
+					eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+			</div>
+		</div>
+
+		<div id="project-gallery">
+			<div class="subheader-text">Image Gallery</div>
+			<div class="project-gallery-content">
+				<div class="gallery-image-container half-width">
+					<img src="../assets/images/code.jpeg" class="gallery-image">
+					<span class="image-caption">Give your image a caption. People love context.</span>
+				</div>
+				<div class="gallery-image-container half-width">
+					<img src="../assets/images/sketchbook.jpeg" class="gallery-image">
+					<span class="image-caption">Give your image a caption. People love context.</span>
+				</div>
+				<div class="gallery-image-container">
+					<img src="../assets/images/camera.jpeg" class="gallery-image">
+					<span class="image-caption">Give your image a caption. People love context.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<a class="icon-link" target="_blank" href="https://www.instagram.com/luanatthomas/">
+			<image src="./assets/icons/instagram.svg" class="footer-icon" />
+		</a>
+		<a class="icon-link" target="_blank" href="https://github.com/luanatthomas">
+			<image src="./assets/icons/github.svg" class="footer-icon" />
+		</a>
+		<a class="icon-link" href="mailto:luana.thomas@hotmail.com">
+			<image src="./assets/icons/mail.svg" class="footer-icon" />
+		</a>
+	</div>
+
+	<script>
+		function switchLanguage(lang) {
+			const content = {
+				'en': {
+					'apresentacao': "Hey, I'm @luanatthomas,",
+				},
+				'pt': {
+					'apresentacao': "Olá, eu sou @luanatthomas,",
+				}
+			};
+
+			document.getElementById('apresentacao').innerText = content[lang]['apresentacao'];
+			
+			localStorage.setItem('language', lang);
+		}
+
+		const storedLanguage = localStorage.getItem('language');
+		if (storedLanguage) {
+			switchLanguage(storedLanguage);
+		}
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/ico/me.ico" />
+	<title>Luana Thomas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/typography.css">
+	<link rel="stylesheet" href="../css/utilities.css">
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body>
+	<style>
+		.button-container {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.button {
+			margin-left: 5px;
+		}
+		.tag {
+            display: inline-block;
+            background-color: #717171;
+            color: #ffffff;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #2a2a2a;
+        }
+	</style>
+
+	<div class="navbar">
+		<a class="nav-title-link" href="../index.html">
+			<span class="nav-title">Luana Thomas</span>
+			<div class="button-container">
+				<a class="button" onclick="switchLanguage('en')">
+					<span class="button-text">English</span>
+				</a>
+				<a class="button" onclick="switchLanguage('pt')">
+					<span class="button-text">Português</span>
+				</a>
+			</div>
+		</a>
+	</div>
+
+	<div id="main-content">
+		<div id="project-header">
+			<div class="main-title">ByteVerse</div>
+		</div>
+
+		<div id="project-details">
+			<div class="project-details-content">
+				<div id="byteverse" class="body-text">
+					ByteVerse was an application developed in group, which explores some of the SpriteKit and CoreMotion frameworks. The main idea of the game is for the user to use the iPhone's gyroscope sensors to control the character and shoot the drones that appear on the screen. Are you ready to save the world from evil drones? The app is now available for download on the AppStore! Download now and embark on this exciting journey to victory!
+				</div>
+
+				<div class="body-text">
+					<p>AppStore: <a href="https://apple.co/3TNppOi">https://apple.co/3TNppOi</a></p>
+				</div>
+
+				<div class="tags">
+					<span class="tag">Swift</span>
+					<span class="tag">SpriteKit</span>
+					<span class="tag">CoreMotion</span>
+					<span class="tag">Haptics</span>	
+				</div>
+			</div>
+		</div>
+
+		<div id="project-gallery">
+			<div class="subheader-text">Previews</div>
+			<div class="project-gallery-content">
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/byteverse/img/Byteverse 1.png" class="gallery-image">
+					<span id="caption1" class="image-caption">Home screen</span>
+				</div>
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/byteverse/img/Byteverse 2.png" class="gallery-image">
+					<span id="caption2" class="image-caption">Beginning of the game</span>
+				</div>
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/byteverse/img/Byteverse 3.png" class="gallery-image">
+					<span id="caption3" class="image-caption">Shooting enemies</span>
+				</div>
+				<div class="gallery-image-container half-width">
+					<img src="../img/gallery/byteverse/img/Byteverse 4.png" class="gallery-image">
+					<span id="caption4" class="image-caption">Character hit</span>
+				</div>
+				
+					
+				<div class="gallery-image-container half-width-video">
+					<video controls>
+						<source src="../img/gallery/byteverse/vid/Byteverse 1.mov" type="video/mp4">
+						Your browser does not support the video element.
+					</video>
+					<span id="caption5" class="image-caption">Demonstration of a game play</span>
+				</div>
+				
+
+
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<a class="icon-link" target="_blank" href="https://www.instagram.com/luanatthomas/">
+			<image src="../img/icons/instagram.svg" class="footer-icon" />
+		</a>
+		<a class="icon-link" target="_blank" href="https://github.com/luanatthomas">
+			<image src="../img/icons/github.svg" class="footer-icon" />
+		</a>
+		<a class="icon-link" href="mailto:luana.thomas@hotmail.com">
+			<image src="../img/icons/mail.svg" class="footer-icon" />
+		</a>
+	</div>
+
+	<script>
+		function switchLanguage(lang) {
+			const content = {
+				'en': {
+					'byteverse': "ByteVerse was an application developed in group, which explores some of the SpriteKit and CoreMotion frameworks. The main idea of the game is for the user to use the iPhone's gyroscope sensors to control the character and shoot the drones that appear on the screen. Are you ready to save the world from evil drones? The app is now available for download on the AppStore! Download now and embark on this exciting journey to victory!",
+					'caption1': "Home screen",
+					'caption2': "Beginning of the game",
+					'caption3': "Shooting enemies",
+					'caption4': "Character hit",
+					'caption5': "Demonstration of a game play",
+				},
+				'pt': {
+					'byteverse': "O ByteVerse foi um aplicativo desenvolvido em grupo, que explora um pouco dos frameworks SpriteKit e CoreMotion. A ideia principal do jogo é que o usuário utilize os sensores de giroscopio do iphone para controlar o personagem e atirar nos drones que aparecem na tela.  Está pronto para salvar o mundo dos drones malignos? O aplicativo já está disponível para download na AppStore! Baixe agora mesmo e embarque nessa emocionante jornada para a vitória!",
+					'caption1': "Tela inicial",
+					'caption2': "Inicio do jogo",
+					'caption3': "Disparando contra os inimigos",
+					'caption4': "Personagem atingido",
+					'caption5': "Demonstração de uma partida do jogo",
+				}
+			};
+			document.getElementById('byteverse').innerText = content[lang]['byteverse'];
+			document.getElementById('caption1').innerText = content[lang]['caption1'];
+			document.getElementById('caption2').innerText = content[lang]['caption2'];
+			document.getElementById('caption3').innerText = content[lang]['caption3'];
+			document.getElementById('caption4').innerText = content[lang]['caption4'];
+			document.getElementById('caption5').innerText = content[lang]['caption5'];
+
+			localStorage.setItem('language', lang);
+		}
+		const storedLanguage = localStorage.getItem('language');
+		if (storedLanguage) {
+			switchLanguage(storedLanguage);
+		}
+	</script>
+</body>
+</html>
