@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/ico/me.ico" />
+	<title>Fernando Fontanive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/typography.css">
+	<link rel="stylesheet" href="../css/utilities.css">
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body>
+	<style>
+		.button-container {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.button {
+			margin-left: 5px;
+		}
+		.tag {
+            display: inline-block;
+            background-color: #717171;
+            color: #ffffff;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #2a2a2a;
+        }
+	</style>
+
+	<div class="navbar">
+		<a class="nav-title-link" href="../index.html">
+			<span class="nav-title">Fernando Fontanive</span>
+			<div class="button-container">
+				<a class="button" onclick="switchLanguage('en')">
+					<span class="button-text">English</span>
+				</a>
+				<a class="button" onclick="switchLanguage('pt')">
+					<span class="button-text">Português</span>
+				</a>
+			</div>
+		</a>
+	</div>
+
+	<div id="main-content">
+		<div id="project-header">
+			<div class="main-title">Trendy</div>
+		</div>
+
+		<div id="project-details">
+			<div class="project-details-content">
+				<div id="trendy1" class="body-text">
+					Trendy makes life worth living and is a memory keeper. Discover all the fun activities there are to make every moment count!
+<p>
+Discover fun and unusual activities with Trendy and capture each moment with photos and videos. Relive your memories anytime and share your adventures with friends!
+</p>
+<div class="body-text">
+    <div id="trendy2" class="body-text">
+        Features:
+    </div>
+    <ul>
+        <li>
+            <p id="trendy3">Access to creative and exciting activity ideas.</p>
+        </li>
+        <li>
+            <p id="trendy4">Capture each experience with photos or videos.</p>
+        </li>
+        <li>
+            <p id="trendy5">Memory gallery to revisit special moments.</p>
+        </li>
+        <li>
+            <p id="trendy6">Activities categorized: Friends, Solo, Food, Arts, Explorer, Special, and Custom.</p>
+        </li>
+        <li>
+            <p id="trendy7">Explore new trends and challenges to live life to the fullest.</p>
+        </li>
+        <li>
+            <p id="trendy8"></p>Enjoy social experiences that celebrate life and creativity.</p>
+        </li>
+    </ul>
+</div>
+<div id="trendy10" class="body-text">
+<p>Choose which category you want to find more activities:</p>
+
+<p>Explorer: Engage in experiences that encourage you to explore the world around you.</p>
+<p>Solo: Discover experiences you can do alone.</p>
+<p>Friends: Find fun activities you can do with others.</p>
+<p>Arts: Discover experiences that reveal your artistic talents (or not).</p>
+</div>
+
+
+				</div>
+
+	
+
+
+				<div id="trendy10" class="body-text">
+					Download now from the AppStore!
+				</div>
+
+				<div class="body-text">
+					<p>AppStore: <a href="https://apple.co/3ZCv127">https://apple.co/3ZCv127</a></p>
+				</div>
+
+				<div class="tags">
+					<span class="tag">Swift</span>
+					<span class="tag">SwiftUI</span>
+					<span class="tag">CloudKit</span>
+					<span class="tag">CameraKit</span>
+					<span class="tag">MVVM</span>
+					<span id="tag1" class="tag">Accessibility</span>			
+				</div>
+			</div>
+		</div>
+
+		<div id="project-gallery">
+			<div class="subheader-text">Previews</div>
+			<div class="project-gallery-content">
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/trendy/img/Trendy 1.png" class="gallery-image">
+					<span id="caption1" class="image-caption">Home screen</span>
+				</div>
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/trendy/img/Trendy 2.png" class="gallery-image">
+					<span id="caption2" class="image-caption">Deck selection</span>
+				</div>
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/trendy/img/Trendy 3.png" class="gallery-image">
+					<span id="caption3" class="image-caption">Experience selection</span>
+				</div>
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/trendy/img/Trendy 4.png" class="gallery-image">
+					<span id="caption4" class="image-caption">Completed home screen</span>
+				</div>
+				<div class="gallery-image-container third-width">
+					<img src="../img/gallery/trendy/img/Trendy 5.png" class="gallery-image">
+					<span id="caption5" class="image-caption">Creating personalized experience</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<a class="icon-link" target="_blank" href="https://github.com/nandofontanive">
+			<image src="../img/icons/github.svg" class="footer-icon" />
+		</a>
+		<a class="icon-link" href="mailto:nando.fontanive@gmail.com">
+			<image src="../img/icons/mail.svg" class="footer-icon" />
+		</a>
+	</div>
+
+	<script>
+		function switchLanguage(lang) {
+			const content = {
+				'en': {
+					'trendy1': "Embark on an exciting journey with Trendy, the app that brings classic decision-making to your fingertips - conveniently accessible on your Apple Watch and iPhone! The thrill of tossing a coin or rolling a dice comes to life like never before. Just move your wrist up and down with your Apple Watch or shake your iPhone to experience the exciting animations and immersive sounds of these timeless games. Advanced accelerometer technology ensures seamless, realistic gameplay, making every movement feel authentic. Stay tuned for upcoming updates with additional minigames like Rock, Paper, Scissors, with multiplayer features for endless entertainment with friends and family. Plus, unlock different dice types and minigames for more variety and excitement.",
+					'trendy2': "Features:",
+					'trendy3': "Heads or Tails: Experience the classic coin toss in stunning 3D.",
+					'trendy4': "Dice Roll: Shake your device to roll the dice and see what fate has in store.",
+					'trendy5': "Apple Watch Integration: Enjoy seamless gameplay on your wrist with Apple Watch support.",
+					'trendy6': "Realistic sound effects: Immerse yourself in the experience with authentic sounds in every playthrough.",
+					'trendy7': "Download now from the AppStore!",
+                    'trendy8': "Download now from the AppStore!",
+                    'trendy9': "Download now from the AppStore!",
+                    'trendy10': "Download now from the AppStore!",
+					'tag1': "Accessibility",
+					'caption1': "Home screen",
+					'caption2': "Experience selection",
+					'caption3': "Dice roll: moving dice",
+					'caption4': "Dice roll",
+					'caption5': "Heads or tails: Tails",
+					'caption6': "Heads or tails: Heads",
+					'caption7': "Application home screen",
+					'caption8': "Dice roll",
+					'caption9': "Heads or tails",
+				},
+				'pt': {
+					'trendy1': "Trendy faz a vida valer a pena e guarda suas memórias. Descubra todas as atividades divertidas para fazer cada momento valer a pena!",
+					'trendy2': "Features:",
+					'trendy3': "Cara ou coroa: Experimente o clássico lançamento de moeda em 3D impressionante.",
+					'trendy4': "Lançamento de dados: Agite seu dispositivo para lançar os dados e ver o que o destino reserva.",
+					'trendy5': "Integração com Apple Watch: desfrute de uma jogabilidade perfeita no seu pulso com suporte para Apple Watch.",
+					'trendy6': "Efeitos sonoros realistas: mergulhe na experiência com sons autênticos em cada jogada.",
+					'trendy7': "Baixe já na AppStore!",
+                    'trendy8': "Download now from the AppStore!",
+                    'trendy9': "Download now from the AppStore!",
+                    'trendy10': "Download now from the AppStore!",
+					'tag1': "Acessibilidade",
+					'caption1': "Tela inicial",
+					'caption2': "Seleção de experiência",
+					'caption3': "Jogo de dados: dado em movimento",
+					'caption4': "Jogo de dados",
+					'caption5': "Cara ou coroa: Coroa",
+					'caption6': "Cara ou coroa: Cara",
+					'caption7': "Tela inicial do aplicativo",
+					'caption8': "Lançamento de dados",
+					'caption9': "Cara ou coroa",
+				}
+
+                
+
+
+Descubra atividades divertidas e inusitadas com Trendy e registre cada momento com fotos e vídeos. Reviva suas memórias quando quiser e compartilhe suas aventuras com amigos!
+
+- Acesso a ideias de atividades criativas e emocionantes.
+
+- Capture cada experiência com fotos ou vídeos.
+
+- Galeria de memórias para revisitar momentos especiais.
+
+- Atividades categorizadas: Amigos, Individual, Comida, Artes, Explorador, Especiais e Personalizada.
+
+- Explore novas tendências e desafios para viver a vida ao máximo.
+
+- Divirta-se com experiências sociais que celebram a vida e a criatividade.
+
+Escolha qual categoria você quer encontrar mais atividades:
+
+- Explorador: Explore experiências que te incentivam a explorar o mundo ao seu redor.
+
+- Individual: Descubra experiências que você pode fazer sozinho.
+
+- Amigos: Veja experiências divertidas que você pode fazer com outras pessoas.
+
+- Arte: Encontre experiências que revelem seus talentos artísticos (ou não).
+
+
+			};
+			document.getElementById('trendy1').innerText = content[lang]['trendy1'];
+			document.getElementById('trendy2').innerText = content[lang]['trendy2'];
+			document.getElementById('trendy3').innerText = content[lang]['trendy3'];
+			document.getElementById('trendy4').innerText = content[lang]['trendy4'];
+			document.getElementById('trendy5').innerText = content[lang]['trendy5'];
+			document.getElementById('trendy6').innerText = content[lang]['trendy6'];
+			document.getElementById('trendy7').innerText = content[lang]['trendy7'];
+            document.getElementById('trendy8').innerText = content[lang]['trendy8'];
+            document.getElementById('trendy9').innerText = content[lang]['trendy9'];
+            document.getElementById('trendy10').innerText = content[lang]['trendy10'];
+			document.getElementById('tag1').innerText = content[lang]['tag1'];
+			document.getElementById('caption1').innerText = content[lang]['caption1'];
+			document.getElementById('caption2').innerText = content[lang]['caption2'];
+			document.getElementById('caption3').innerText = content[lang]['caption3'];
+			document.getElementById('caption4').innerText = content[lang]['caption4'];
+			document.getElementById('caption5').innerText = content[lang]['caption5'];
+			document.getElementById('caption6').innerText = content[lang]['caption6'];
+			document.getElementById('caption7').innerText = content[lang]['caption7'];
+			document.getElementById('caption8').innerText = content[lang]['caption8'];
+			document.getElementById('caption9').innerText = content[lang]['caption9'];
+
+			localStorage.setItem('language', lang);
+		}
+		const storedLanguage = localStorage.getItem('language');
+		if (storedLanguage) {
+			switchLanguage(storedLanguage);
+		}
+	</script>
+</body>
+</html>
