@@ -2,183 +2,214 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<link rel="icon" href="img/ico/me.ico" />
-	<title>Fernando Fontanive</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="../css/layout.css">
-	<link rel="stylesheet" href="../css/typography.css">
-	<link rel="stylesheet" href="../css/utilities.css">
-	<script defer src="../js/script.js"></script>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/ico/me.ico" />
+    <title>Fernando Fontanive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <script defer src="../js/script.js"></script>
 </head>
 
 <body>
-	<style>
-		.button-container {
-			display: flex;
-			justify-content: flex-end;
-		}
-		.button {
-			margin-left: 5px;
-		}
-		.tag {
-			display: inline-block;
-			background-color: #717171;
-			color: #ffffff;
-			padding: 5px 10px;
-			margin: 5px;
-			border-radius: 8px;
-			text-decoration: none;
-		}
-		.tag:hover {
-			background-color: #2a2a2a;
-		}
-	</style>
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+        }
 
-	<div class="navbar">
-		<a class="nav-title-link" href="../index.html">
-			<span class="nav-title">Fernando Fontanive</span>
-			<div class="button-container">
-				<a class="button" onclick="switchLanguage('en')">
-					<span class="button-text">English</span>
-				</a>
-				<a class="button" onclick="switchLanguage('pt')">
-					<span class="button-text">Português</span>
-				</a>
-			</div>
-		</a>
-	</div>
+        .button {
+            margin-left: 5px;
+        }
 
-	<div id="main-content">
-		<div id="project-header">
-			<div class="main-title">Trendy</div>
-		</div>
+        .tag {
+            display: inline-block;
+            background-color: #717171;
+            color: #ffffff;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
 
-		<div id="project-details">
-			<div class="project-details-content">
-				<div id="trendy1" class="body-text">
-					Trendy makes life worth living and is a memory keeper. Discover all the fun activities there are to make every moment count!
-				</div>
+        .tag:hover {
+            background-color: #2a2a2a;
+        }
+    </style>
 
-				<div id="trendy2" class="body-text">
-					Guided by fun and creativity, explore new experiences:
-				</div>
+    <div class="navbar">
+        <a class="nav-title-link" href="../index.html">
+            <span class="nav-title">Fernando Fontanive</span>
+            <div class="button-container">
+                <a class="button" onclick="switchLanguage('en')">
+                    <span class="button-text">English</span>
+                </a>
+                <a class="button" onclick="switchLanguage('pt')">
+                    <span class="button-text">Português</span>
+                </a>
+            </div>
+        </a>
+    </div>
 
-				<div class="body-text">
-					<ul>
-						<li>
-							<p id="trendy3">A captivating way to explore and save memories.</p>
-						</li>
-						<li>
-							<p id="trendy4">Capture moments through photos or videos.</p>
-						</li>
-						<li>
-							<p id="trendy5">Access trends and challenges to make your days unforgettable.</p>
-						</li>
-					</ul>
-				</div>
-				<div id="trendy6" class="body-text">
-					With Trendy, life's adventures are always within reach! Discover categorized activities and start your journey today.
-				</div>
+    <div id="main-content">
+        <div id="project-header">
+            <div class="main-title">Trendy</div>
+        </div>
 
-				<div class="body-text">
-					<p>AppStore: <a href="https://apple.co/3ZCv127">https://apple.co/3ZCv127</a></p>
-				</div>
+        <div id="project-details">
+            <div class="project-details-content">
+                <div id="trendy1" class="body-text">
+                    <p>Trendy makes life worth living and is a memory keeper. Discover all the fun activities there are to
+                        make every moment count!</p>
+                    <p>Discover fun and unusual activities with Trendy and capture each moment with photos and videos.
+                        Relive your memories anytime and share your adventures with friends!</p>
+                </div>
 
-				<div class="tags">
-					<span class="tag">Swift</span>
-					<span class="tag">SwiftUI</span>
-					<span class="tag">CloudKit</span>
-					<span class="tag">CameraKit</span>
-					<span class="tag">MVVM</span>
-					<span id="tag1" class="tag">Accessibility</span>
-				</div>
-			</div>
-		</div>
+                <div id="trendy2" class="body-text">
+                    Features:
+                </div>
 
-		<div id="project-gallery">
-			<div class="subheader-text">Previews</div>
-			<div class="project-gallery-content">
-				<div class="gallery-image-container third-width">
-					<img src="../img/gallery/trendy/img/Trendy 1.png" class="gallery-image">
-					<span id="caption1" class="image-caption">Home screen</span>
-				</div>
-				<div class="gallery-image-container third-width">
-					<img src="../img/gallery/trendy/img/Trendy 2.png" class="gallery-image">
-					<span id="caption2" class="image-caption">Deck selection</span>
-				</div>
-				<div class="gallery-image-container third-width">
-					<img src="../img/gallery/trendy/img/Trendy 3.png" class="gallery-image">
-					<span id="caption3" class="image-caption">Experience selection</span>
-				</div>
-				<div class="gallery-image-container third-width">
-					<img src="../img/gallery/trendy/img/Trendy 4.png" class="gallery-image">
-					<span id="caption4" class="image-caption">Completed home screen</span>
-				</div>
-				<div class="gallery-image-container third-width">
-					<img src="../img/gallery/trendy/img/Trendy 5.png" class="gallery-image">
-					<span id="caption5" class="image-caption">Creating personalized experience</span>
-				</div>
-			</div>
-		</div>
-	</div>
+                <ul>
+                    <li id="trendy3">Access to creative and exciting activity ideas.</li>
+                    <li id="trendy4">Capture each experience with photos or videos.</li>
+                    <li id="trendy5">Memory gallery to revisit special moments.</li>
+                    <li id="trendy6">Activities categorized: Friends, Solo, Food, Arts, Explorer, Special, and Custom.</li>
+                    <li id="trendy7">Explore new trends and challenges to live life to the fullest.</li>
+                    <li id="trendy8">Enjoy social experiences that celebrate life and creativity.</li>
+                </ul>
 
-	<div id="footer">
-		<a class="icon-link" target="_blank" href="https://github.com/nandofontanive">
-			<image src="../img/icons/github.svg" class="footer-icon" />
-		</a>
-		<a class="icon-link" href="mailto:nando.fontanive@gmail.com">
-			<image src="../img/icons/mail.svg" class="footer-icon" />
-		</a>
-	</div>
+                <div id="trendy9" class="body-text">
+                    <p>Choose which category you want to find more activities:</p>
+                    <p>Explorer: Engage in experiences that encourage you to explore the world around you.</p>
+                    <p>Solo: Discover experiences you can do alone.</p>
+                    <p>Friends: Find fun activities you can do with others.</p>
+                    <p>Arts: Discover experiences that reveal your artistic talents (or not).</p>
+                </div>
 
-	<script>
-		function switchLanguage(lang) {
-			const content = {
-				'en': {
-					'trendy1': "Trendy makes life worth living and is a memory keeper. Discover all the fun activities there are to make every moment count!",
-					'trendy2': "Guided by fun and creativity, explore new experiences:",
-					'trendy3': "A captivating way to explore and save memories.",
-					'trendy4': "Capture moments through photos or videos.",
-					'trendy5': "Access trends and challenges to make your days unforgettable.",
-					'trendy6': "With Trendy, life's adventures are always within reach! Discover categorized activities and start your journey today.",
-					'tag1': "Accessibility",
-					'caption1': "Home screen",
-					'caption2': "Deck selection",
-					'caption3': "Experience selection",
-					'caption4': "Completed home screen",
-					'caption5': "Creating personalized experience",
-				},
-				'pt': {
-					'trendy1': "Trendy faz a vida valer a pena e guarda suas memórias. Descubra todas as atividades divertidas para fazer cada momento valer a pena!",
-					'trendy2': "Guiado por diversão e criatividade, explore novas experiências:",
-					'trendy3': "Uma forma cativante de explorar e salvar memórias.",
-					'trendy4': "Capture momentos através de fotos ou vídeos.",
-					'trendy5': "Acesse tendências e desafios para tornar seus dias inesquecíveis.",
-					'trendy6': "Com o Trendy, as aventuras da vida estão sempre ao seu alcance! Descubra atividades categorizadas e comece sua jornada hoje.",
-					'tag1': "Acessibilidade",
-					'caption1': "Tela inicial",
-					'caption2': "Seleção de deck",
-					'caption3': "Seleção de experiências",
-					'caption4': "Tela inicial concluída",
-					'caption5': "Criando experiências personalizadas",
-				}
-			};
+                <div id="trendy10" class="body-text">
+                    Download now from the AppStore!
+                </div>
 
-			for (const [key, value] of Object.entries(content[lang])) {
-				const element = document.getElementById(key);
-				if (element) {
-					element.innerText = value;
-				}
-			}
+                <div class="body-text">
+                    <p>AppStore: <a href="https://apple.co/3ZCv127">https://apple.co/3ZCv127</a></p>
+                </div>
 
-			localStorage.setItem('language', lang);
-		}
+                <div class="tags">
+                    <span class="tag">Swift</span>
+                    <span class="tag">SwiftUI</span>
+                    <span class="tag">CloudKit</span>
+                    <span class="tag">CameraKit</span>
+                    <span class="tag">MVVM</span>
+                    <span id="tag1" class="tag">Accessibility</span>
+                </div>
+            </div>
+        </div>
 
-		const storedLanguage = localStorage.getItem('language');
-		if (storedLanguage) {
-			switchLanguage(storedLanguage);
-		}
-	</script>
+        <div id="project-gallery">
+            <div class="subheader-text">Previews</div>
+            <div class="project-gallery-content">
+                <div class="gallery-image-container third-width">
+                    <img src="../img/gallery/trendy/img/Trendy 1.png" class="gallery-image">
+                    <span id="caption1" class="image-caption">Home screen</span>
+                </div>
+                <div class="gallery-image-container third-width">
+                    <img src="../img/gallery/trendy/img/Trendy 2.png" class="gallery-image">
+                    <span id="caption2" class="image-caption">Deck selection</span>
+                </div>
+                <div class="gallery-image-container third-width">
+                    <img src="../img/gallery/trendy/img/Trendy 3.png" class="gallery-image">
+                    <span id="caption3" class="image-caption">Experience selection</span>
+                </div>
+                <div class="gallery-image-container third-width">
+                    <img src="../img/gallery/trendy/img/Trendy 4.png" class="gallery-image">
+                    <span id="caption4" class="image-caption">Completed home screen</span>
+                </div>
+                <div class="gallery-image-container third-width">
+                    <img src="../img/gallery/trendy/img/Trendy 5.png" class="gallery-image">
+                    <span id="caption5" class="image-caption">Creating personalized experience</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <a class="icon-link" target="_blank" href="https://github.com/nandofontanive">
+            <image src="../img/icons/github.svg" class="footer-icon" />
+        </a>
+        <a class="icon-link" href="mailto:nando.fontanive@gmail.com">
+            <image src="../img/icons/mail.svg" class="footer-icon" />
+        </a>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            const content = {
+                'en': {
+                    'trendy1': `<p>Trendy makes life worth living and is a memory keeper. Discover all the fun activities there are to make every moment count!</p>
+                                <p>Discover fun and unusual activities with Trendy and capture each moment with photos and videos.</p>
+                                <p>Relive your memories anytime and share your adventures with friends!</p>`,
+                    'trendy2': "Features:",
+                    'trendy3': "Access to creative and exciting activity ideas.",
+                    'trendy4': "Capture each experience with photos or videos.",
+                    'trendy5': "Memory gallery to revisit special moments.",
+                    'trendy6': "Activities categorized: Friends, Solo, Food, Arts, Explorer, Special, and Custom.",
+                    'trendy7': "Explore new trends and challenges to live life to the fullest.",
+                    'trendy8': "Enjoy social experiences that celebrate life and creativity.",
+                    'trendy9': `Choose which category you want to find more activities:
+                                <p>Explorer: Engage in experiences that encourage you to explore the world around you.</p>
+                                <p>Solo: Discover experiences you can do alone.</p>
+                                <p>Friends: Find fun activities you can do with others.</p>
+                                <p>Arts: Discover experiences that reveal your artistic talents (or not).</p>`,
+                    'trendy10': "Download now from the AppStore!",
+                    'tag1': "Accessibility",
+                    'caption1': "Home screen",
+                    'caption2': "Deck selection",
+                    'caption3': "Experience selection",
+                    'caption4': "Completed home screen",
+                    'caption5': "Creating personalized experience",
+                },
+                'pt': {
+                    'trendy1': `<p>Trendy faz a vida valer a pena e guarda suas memórias. Descubra todas as atividades divertidas para fazer cada momento valer a pena!</p>
+                                <p>Descubra atividades divertidas e incomuns com o Trendy e capture cada momento com fotos e vídeos.</p>
+                                <p>Reviva suas memórias a qualquer momento e compartilhe suas aventuras com amigos!</p>`,
+                    'trendy2': "Features:",
+                    'trendy3': "Acesso a ideias de atividades criativas e emocionantes.",
+                    'trendy4': "Capture cada experiência com fotos ou vídeos.",
+                    'trendy5': "Galeria de memórias para revisitar momentos especiais.",
+                    'trendy6': "Atividades categorizadas: Amigos, Individual, Comida, Artes, Explorador, Especiais e Personalizada.",
+                    'trendy7': "Explore novas tendências e desafios para viver a vida ao máximo.",
+                    'trendy8': "Divirta-se com experiências sociais que celebram a vida e a criatividade.",
+                    'trendy9': `Escolha qual categoria você quer encontrar mais atividades:
+                                <p>Explorador: Explore experiências que te incentivam a explorar o mundo ao seu redor.</p>
+                                <p>Individual: Descubra experiências que você pode fazer sozinho.</p>
+                                <p>Amigos: Veja experiências divertidas que você pode fazer com outras pessoas.</p>
+                                <p>Arte: Encontre experiências que revelem seus talentos artísticos (ou não).</p>`,
+                    'trendy10': "Baixe já na AppStore!",
+                    'tag1': "Acessibilidade",
+                    'caption1': "Tela inicial",
+                    'caption2': "Seleção de deck",
+                    'caption3': "Seleção de experiência",
+                    'caption4': "Tela inicial completa",
+                    'caption5': "Criando experiência personalizada",
+                }
+            };
+
+            for (const [key, value] of Object.entries(content[lang])) {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.innerHTML = value;
+                }
+            }
+
+            localStorage.setItem('language', lang);
+        }
+
+        const storedLanguage = localStorage.getItem('language');
+        if (storedLanguage) {
+            switchLanguage(storedLanguage);
+        }
+    </script>
 </body>
+
 </html>
